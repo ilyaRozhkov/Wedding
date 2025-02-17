@@ -1,0 +1,86 @@
+.form-containet{
+    margin-top: 16px;
+}
+.form-title{
+    font-size: 30px;
+}
+.questions-container{
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.questions-container-item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.question-title{
+    font-size: 16px;
+}
+.requered::after{
+    content: '\FE61';
+    color: red;
+}
+.question-input{
+    margin: 8px 0 32px;
+    height: 30px;
+    width: 400px;
+}
+.question-radio{
+    width: 315px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.radio-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 8px;
+    width: 315px;
+}
+.radio-text{
+
+}
+.question-cheackbox{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.cheackbox-item{
+    display: flex
+    ;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 8px;
+}
+
+   .input {
+    border: solid 1.5px #2d2d2dc4;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #000;
+   }
+
+   .btn-submit{
+    width: 120px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+   }
+   

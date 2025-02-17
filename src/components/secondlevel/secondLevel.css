@@ -1,0 +1,14 @@
+.second-level-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.second-level-title{
+    font-size: 30px;
+}
+.second-level-text{
+    margin-top: 8px;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 4px;
+}

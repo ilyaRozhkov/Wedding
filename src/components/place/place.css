@@ -1,0 +1,73 @@
+.place-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.place-title{
+    font-size: 30px;
+}
+.place-name{
+    margin-top: 8px;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 4px;
+}
+.place-address{
+    margin-top: 8px;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 4px;
+}
+.cta {
+    margin-top: 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .cta span {
+    padding-bottom: 7px;
+    font-size: 12px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .place-map{
+    margin: 16px auto;
+  }

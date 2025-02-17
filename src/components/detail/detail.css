@@ -1,0 +1,24 @@
+.detail-container{
+    margin-top: 16px;
+}
+.detail-title{
+    font-size: 30px;
+}
+.detail-item-container{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: auto;
+    margin: 16px auto;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.detail-item-item{
+    margin-top: 16px;
+    font-size: 16px;
+}
+.detail-item-split{
+    margin-top: 16px;
+    font-size: 24px;
+    content: ''
+}

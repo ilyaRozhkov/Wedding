@@ -1,0 +1,31 @@
+.dress-code-container{
+    margin-top: 16px;
+}
+.dress-code-title{
+    font-size: 30px;
+}
+.dress-code-text{
+    font-size: 16px;
+    padding: 4px;
+    margin-top: 8px;
+}
+.dress-code-item-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 400px;
+    height: 100px;
+    margin: 16px auto;
+    border: 1px solid #898989;
+    border-radius: 50px;
+    align-items: center;
+}
+.dress-code-color{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+}

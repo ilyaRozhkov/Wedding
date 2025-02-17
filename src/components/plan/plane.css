@@ -1,0 +1,31 @@
+.plane-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+.plane-title{
+    font-size: 30px;
+}
+.plane-container-item{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 200px;
+}
+.plane-container-item-letf{
+    width: 160px;
+}
+.plane-container-item-line{
+    border-right: 1px solid black;
+}
+.plane-container-item-right{
+    width: 160px;
+}
+.plane-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
