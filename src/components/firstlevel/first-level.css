@@ -1,4 +1,11 @@
+.first-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .first-level-container{
+    font-family: 'Good Vibes Pro', sans-serif;
     margin-top: 120px;
     display: flex;
     max-width: 420px;
@@ -12,13 +19,41 @@
 }
 .first-level-containet-date{
     font-size: 40px;
+    margin-right: 16px;
     display: flex;
+    position: relative;
+    animation: 2s showDate ease-out;
     flex-direction: column;
+    z-index: 10;
+}
+@keyframes showDate {
+    from { left: -50px;
+    opacity: 0;}
+    to {left: 0px; opacity: 1;}
 }
 .image-first-level{
     width: 290px;
     height: 440px;
     object-fit: contain;
     border-radius: 16px;
+}
+.middle-side-image{
+    position: relative;
+    animation: 2s showImageEbloUs ease-out;
+}
+@keyframes showImageEbloUs {
+    from { right: -50px;
+    opacity: 0;}
+    to {right: 0px; opacity: 1;}
+}
+
+.image-flower-first-level{
+    width: 290px;
+    height: 440px;
+    object-fit: contain;
+    border-radius: 16px;
+    position: absolute;
+    left: -219px;
+    top: 110px;
 }
 

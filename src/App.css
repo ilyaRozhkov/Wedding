@@ -6,6 +6,7 @@
 body{
   padding: 0;
   margin: 0;
+  font-family: 'Good Vibes Pro', sans-serif;
 }
 .App-logo {
   height: 40vmin;
@@ -28,7 +29,10 @@ body{
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+@font-face {
+  font-family: 'Good Vibes Pro';
+  src: url('../src/fonts/GoodVibesCyr.ttf');
+}
 .App-link {
   color: #61dafb;
 }

@@ -4,7 +4,7 @@
     margin-top: 16px;
 }
 .plane-title{
-    font-size: 30px;
+    font-size: 40px;
 }
 .plane-container-item{
     margin-top: 24px;
@@ -27,5 +27,5 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    font-size: 18px;
+    font-size: 24px;
 }

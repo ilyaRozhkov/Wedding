@@ -17,8 +17,8 @@ export const Place = () =>{
             <div className='place-name'>Ресторан Арт-холл</div>
             <div className='place-address'>г. Брянск, Московский проспект, 158</div>
 
-            <button class="cta" onClick={()=>onMap()}>
-  <span class="hover-underline-animation"> Посмотреть на карте </span>
+            <button className="cta" onClick={()=>onMap()}>
+  <span className="hover-underline-animation"> Посмотреть на карте </span>
   <svg
     id="arrow-horizontal"
     xmlns="http://www.w3.org/2000/svg"
