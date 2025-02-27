@@ -19,7 +19,6 @@ export const FormComponent = () =>{
     const [drinks, setDrinks] = useState(['none']);
     const [allergy, setAllergy] = useState('');
     const [transfer, setTransfer] = useState(0);
-    console.log(123);
     const onChangeDrinks = (value)=>{
         if(value=='none'){
             setDrinks(['none'])
@@ -53,13 +52,10 @@ export const FormComponent = () =>{
             allergy:allergy,
             transfer:transferValue[transfer],
         };
-        console.log('name', name)
-        console.log('presence', presence)
-        console.log('allergy', allergy)
-        console.log('transfer', transfer)
-        // axios.post('https://api.sheetbest.com/sheets/92345ab0-cc4b-4d9c-b958-b10acc9a1661', body)
-        // .then(response => {
-        // })
+
+        axios.post('https://api.sheetbest.com/sheets/92345ab0-cc4b-4d9c-b958-b10acc9a1661', body)
+        .then(response => {
+        })
     }
     return (
         <div className='form-containet'>
