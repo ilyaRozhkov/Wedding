@@ -4,32 +4,32 @@ import './dress-code.css';
 import {motion} from "framer-motion";
 
 
-const animationStyleLeft = {
+const animationStyle = {
     timeOutPagesHidden : {
-        x: 150,
+        y: 20,
         opacity: 0
     },
     timeOutPagesVisible : custom => ({
-        x:0,
+        y:0,
         opacity: 1,
-        transition: {delay : custom *0.5},
+        transition: {delay : custom *0.7},
     })
 }
 
 export const DressCode = () =>{
 
     return (
-        <div className='dress-code-container'>
-            <div className='dress-code-title'>Дресс-код</div>
-            <div className='dress-code-text'>Мы очень ждем и с удовольствием готовимся к Нашему дню! Поддержите нас своими улыбками, а также красивыми нарядами в палитре торжества</div>
-            <motion.div initial={'timeOutPagesHidden'}
-                    whileInView={'timeOutPagesVisible'} className='dress-code-item-container'>
-                <motion.div custom={1} variants={animationStyleLeft} className='dress-code-color' style={{backgroundColor: '#e9e2da'}}></motion.div>
-                <motion.div custom={1} variants={animationStyleLeft} className='dress-code-color' style={{backgroundColor: '#caaf8e'}}></motion.div>
-                <motion.div custom={1} variants={animationStyleLeft} className='dress-code-color' style={{backgroundColor: '#73714b'}}></motion.div>
-                <motion.div custom={1} variants={animationStyleLeft} className='dress-code-color' style={{backgroundColor: '#383c1b'}}></motion.div>
+        <motion.div initial={'timeOutPagesHidden'}
+        whileInView={'timeOutPagesVisible'}  className='dress-code-container'>
+            <motion.div custom={1} variants={animationStyle} className='dress-code-title'>Дресс-код</motion.div>
+            <motion.div custom={2} variants={animationStyle} className='dress-code-text'>Мы очень ждем и с удовольствием готовимся к Нашему дню! Поддержите нас своими улыбками, а также красивыми нарядами в палитре торжества</motion.div>
+            <motion.div custom={3} variants={animationStyle} className='dress-code-item-container'>
+                <div className='dress-code-color' style={{backgroundColor: '#e9e2da'}}></div>
+                <div className='dress-code-color' style={{backgroundColor: '#caaf8e'}}></div>
+                <div className='dress-code-color' style={{backgroundColor: '#73714b'}}></div>
+                <div className='dress-code-color' style={{backgroundColor: '#383c1b'}}></div>
         
             </motion.div>
-        </div>
+        </motion.div>
     )
 }

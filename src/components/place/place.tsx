@@ -2,6 +2,23 @@ import './place.css'
 import React, {useEffect, useState} from 'react';
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
+
+import {motion} from "framer-motion";
+
+
+const animationStyle = {
+    timeOutPagesHidden : {
+        y: 20,
+        opacity: 0
+    },
+    timeOutPagesVisible : custom => ({
+        y:0,
+        opacity: 1,
+        transition: {delay : custom *0.7},
+    })
+}
+
+
 export const Place = () =>{
     const [mapOpen, setMapOpen] = useState(false);
 
@@ -12,12 +29,13 @@ export const Place = () =>{
         setMapOpen(!mapOpen)
     }
     return (
-        <div className='place-container'>
-            <div className='place-title'>Место проведения</div>
-            <div className='place-name'>Ресторан Арт-холл</div>
-            <div className='place-address'>г. Брянск, Московский проспект, 158</div>
+        <motion.div         initial={'timeOutPagesHidden'}
+        whileInView={'timeOutPagesVisible'} className='place-container'>
+            <motion.div custom={1} variants={animationStyle} className='place-title'>Место проведения</motion.div>
+            <motion.div custom={2} variants={animationStyle} className='place-name'>Ресторан Арт-холл</motion.div>
+            <motion.div custom={3} variants={animationStyle} className='place-address'>г. Брянск, Московский проспект, 158</motion.div>
 
-            <button className="cta" onClick={()=>onMap()}>
+            <motion.button custom={4} variants={animationStyle} className="cta" onClick={()=>onMap()}>
   <span className="hover-underline-animation"> Посмотреть на карте </span>
   <svg
     id="arrow-horizontal"
@@ -33,7 +51,7 @@ export const Place = () =>{
       transform="translate(30)"
     ></path>
   </svg>
-</button>
+</motion.button>
 {mapOpen && 
 <div className='place-map'>
 <YMaps>
@@ -50,6 +68,6 @@ export const Place = () =>{
       </Map>
     </YMaps>
     </div>}
-        </div>
+        </motion.div>
     )
 }

@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 
 const animationStyle = {
     timeOutPagesHidden : {
-        y: 150,
+        y: 20,
         opacity: 0
     },
     timeOutPagesVisible : custom => ({
@@ -15,38 +15,52 @@ const animationStyle = {
     })
 }
 
+const animationStyleMiddle = {
+    timeOutPagesHiddenMiddle : {
+        scaleY: 0,
+    },
+    timeOutPagesVisibleMiddle : custom => ({
+
+        scaleY: 1,
+        transition: {duration: 3},
+    })
+}
+
 export const Plane = () => {
     return (
-        <div className="plane-container">
-            <div className="plane-title">Программа</div>
+        <motion.div
+        initial={'timeOutPagesHidden'}
+        whileInView={'timeOutPagesVisible'}  className="plane-container">
+            <motion.div custom={1} variants={animationStyle} className="plane-title">Программа</motion.div>
             <div className="plane-container-item">
-                <motion.div
-                    initial={'timeOutPagesHidden'}
-                    whileInView={'timeOutPagesVisible'} className="plane-container-item-letf">
-                    <motion.div custom={1} variants={animationStyle} className="plane-item" style={{marginTop: '5px'}}>
+                <div className="plane-container-item-letf">
+                    <motion.div custom={2} variants={animationStyle} className="plane-item" style={{marginTop: '5px'}}>
                         <div>14:00</div>
                         <div> Регистрация</div>
                     </motion.div>
-                    <motion.div custom={3} variants={animationStyle} className="plane-item"style={{marginTop: '55px'}}>
+                    <motion.div custom={4} variants={animationStyle} className="plane-item"style={{marginTop: '55px'}}>
                         <div>17:00 </div>
                         <div>Ресторан</div>
                     </motion.div>
-                </motion.div>
-                <div className="plane-container-item-line"></div>
+                </div>
                 <motion.div
-                    initial={'timeOutPagesHidden'}
-                    whileInView={'timeOutPagesVisible'} className="plane-container-item-right">
-                <motion.div custom={2} variants={animationStyle} className="plane-item" style={{marginTop: '55px'}}>
+        initial={'timeOutPagesHiddenMiddle'}
+        whileInView={'timeOutPagesVisibleMiddle'} >
+                <motion.div custom={1} variants={animationStyleMiddle} className="plane-container-item-line"></motion.div>
+                </motion.div>
+                <div
+                     className="plane-container-item-right">
+                <motion.div custom={3} variants={animationStyle} className="plane-item" style={{marginTop: '55px'}}>
                     <div>14:30</div>
                     <div> Фотосессия</div>
                 </motion.div>
-                <motion.div custom={4} variants={animationStyle} className="plane-item" style={{marginTop: '55px'}}>
+                <motion.div custom={5} variants={animationStyle} className="plane-item" style={{marginTop: '55px'}}>
                     <div>22:00</div>
                     <div> Торт</div>
                 </motion.div>     
-                </motion.div>
+                </div>
             </div>
 
-        </div>
+        </motion.div>
     )
 }
