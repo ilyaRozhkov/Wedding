@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import './form-component.css'
 
@@ -19,7 +19,7 @@ export const FormComponent = () =>{
     const [drinks, setDrinks] = useState(['none']);
     const [allergy, setAllergy] = useState('');
     const [transfer, setTransfer] = useState(0);
-
+    console.log(123);
     const onChangeDrinks = (value)=>{
         if(value=='none'){
             setDrinks(['none'])
@@ -37,7 +37,15 @@ export const FormComponent = () =>{
             return
         }
     }
+    useEffect(()=>{
+        if(drinks.length == 0){
+            setDrinks(['none'])
+        }
+    },[drinks])
     const sendData = () =>{
+        if(!Boolean(name) || !Boolean(presence) || !Boolean(allergy) || !Boolean(transfer)){
+            return
+        }
         const body ={
             name:name,
             presence:presenceValue[presence],
@@ -45,9 +53,13 @@ export const FormComponent = () =>{
             allergy:allergy,
             transfer:transferValue[transfer],
         };
-        axios.post('https://api.sheetbest.com/sheets/92345ab0-cc4b-4d9c-b958-b10acc9a1661', body)
-        .then(response => {
-        })
+        console.log('name', name)
+        console.log('presence', presence)
+        console.log('allergy', allergy)
+        console.log('transfer', transfer)
+        // axios.post('https://api.sheetbest.com/sheets/92345ab0-cc4b-4d9c-b958-b10acc9a1661', body)
+        // .then(response => {
+        // })
     }
     return (
         <div className='form-containet'>

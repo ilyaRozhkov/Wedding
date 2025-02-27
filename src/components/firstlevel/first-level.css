@@ -57,3 +57,28 @@
     top: 110px;
 }
 
+.image-side-flower-first-level{
+    width: 290px;
+    height: 440px;
+    object-fit: contain;
+    border-radius: 16px;
+    position: absolute;
+    top: 175px;
+    left: 119px;
+}
+
+@keyframes showImageTop {
+    from { opacity: 0;}
+    to {opacity: 1;}
+}
+
+.image-flower-first-level-top{
+    width: 290px;
+    height: 440px;
+    object-fit: contain;
+    border-radius: 16px;
+    position: absolute;
+    top: -160px;
+    left: 70px;
+    animation: 3s showImageTop ease-out;
+}

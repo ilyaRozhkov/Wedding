@@ -19,6 +19,7 @@
 }
 .plane-container-item-line{
     border-right: 1px solid black;
+    height: 245px;
 }
 .plane-container-item-right{
     width: 160px;
@@ -28,4 +29,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     font-size: 24px;
+}
+.cake{
+  background-image: src('../../img/plan/Cake.svg');  
 }

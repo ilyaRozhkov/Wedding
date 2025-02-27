@@ -3,6 +3,7 @@ import './first-level.css';
 
 import ebloUs from '../../img/firstlevelimg/IbloUs.jpg'
 import flower from '../../img/firstlevelimg/flower.png'
+import sideFlower from '../../img/firstlevelimg/sideFlower.png'
 
 export const FirstLevel = () =>{
 
@@ -18,6 +19,7 @@ export const FirstLevel = () =>{
                 </div>
             </div>
             <div className="middle-side-image">
+            <img className="image-side-flower-first-level" src={sideFlower} alt=''/>
                 <img className="image-first-level" src={ebloUs} alt="" />
             </div>
         </div></div>

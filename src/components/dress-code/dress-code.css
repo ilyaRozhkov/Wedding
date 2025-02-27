@@ -15,7 +15,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    width: 400px;
+    max-width: 400px;
     height: 100px;
     margin: 16px auto;
     border: 1px solid #898989;
