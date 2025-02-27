@@ -1,7 +1,7 @@
 .plane-container{
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 .plane-title{
     font-size: 40px;
