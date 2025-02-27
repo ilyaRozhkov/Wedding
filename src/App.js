@@ -10,6 +10,7 @@ import { Contact } from './components/contact/contact.jsx';
 
 
 function App() {
+  console.log("На ошибки тут не смотри, иначе я посмотрю историю твоего браузера")
   return (
     <div className="App">
       <FirstLevel />
