@@ -7,18 +7,21 @@
     font-size: 40px;
 }
 .place-name{
+  font-family: 'ViaodaLibre-Regular', sans-serif;
     margin-top: 8px;
     line-height: 24px;
     font-size: 24px;
     padding: 4px;
 }
 .place-address{
+  font-family: 'ViaodaLibre-Regular', sans-serif;
     margin-top: 8px;
     line-height: 24px;
     font-size: 24px;
     padding: 4px;
 }
 .cta {
+  font-family: 'ViaodaLibre-Regular', sans-serif;
     margin-top: 16px;
     border: none;
     background: none;

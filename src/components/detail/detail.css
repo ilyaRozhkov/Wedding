@@ -5,6 +5,7 @@
     font-size: 40px;
 }
 .detail-item-container{
+    font-family: 'ViaodaLibre-Regular', sans-serif;
     display: flex;
     flex-direction: column;
     width: 350px;

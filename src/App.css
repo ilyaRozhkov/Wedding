@@ -33,6 +33,12 @@ body{
   font-family: 'Good Vibes Pro';
   src: url('../src/fonts/GoodVibesCyr.ttf');
 }
+
+@font-face {
+  font-family: 'ViaodaLibre-Regular';
+  src: url('../src/fonts/ViaodaLibre-Regular.ttf');
+}
+
 .App-link {
   color: #61dafb;
 }
