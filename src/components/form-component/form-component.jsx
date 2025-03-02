@@ -2,6 +2,17 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import './form-component.css'
 import {motion} from "framer-motion";
+import { ToastContainer, toast  } from "react-toastify";
+const Msg = ({ data }) => {
+    return (
+      <div className="msg-container">
+        <p className="msg-title">{data.title}</p>
+        <p className="msg-description">{data.text}</p>
+      </div>
+    );
+  };
+
+
 
 const user = {
     '0JzQuNGF0LDQu9GR0LLQsCDQkNC70LjQvdCw': 'Алина Михалёва',
@@ -44,6 +55,9 @@ export const FormComponent = () =>{
     let params = new URLSearchParams(document.location.search);
     let par = params.get('key'); // 'key' – это имя целевого параметра
 
+
+
+
     const onChangeDrinks = (value)=>{
         if(value=='none'){
             setDrinks(['none'])
@@ -68,7 +82,14 @@ export const FormComponent = () =>{
     },[drinks])
     const sendData = () =>{
         if(!Boolean(presence) || !Boolean(transfer)){
-
+            toast.warning(Msg,
+                {
+                  data : {
+                    title: "Ошибка",
+                    text: "Вы не заполнили поля",
+                  },
+                },
+              );
             return
         }
         const body ={
@@ -81,6 +102,23 @@ export const FormComponent = () =>{
         console.log('body',body)
         axios.post('https://api.sheetbest.com/sheets/92345ab0-cc4b-4d9c-b958-b10acc9a1661', body)
         .then(response => {
+            toast.success(Msg,
+                {
+                  data : {
+                    title: "Данные успешно отправленны",
+                    text: "Спасибо за ответы на вопросы анкеты",
+                  },
+                },
+              );
+        }).catch(err=>{
+            toast.error(Msg,
+                {
+                  data : {
+                    title: "Ошибка",
+                    text: "Попробуйте отправть данные ещё раз",
+                  },
+                },
+              );
         })
     }
     return (
@@ -171,6 +209,7 @@ export const FormComponent = () =>{
                 </motion.div>
             </div>
             <motion.div custom={6} variants={animationStyle} className='btn-submit' onClick={()=>sendData()}>Отправить</motion.div>
+            <ToastContainer />
         </motion.div>
     )
 }
