@@ -120,7 +120,7 @@ export const FormComponent = () =>{
             <motion.div custom={1} variants={animationStyle} className='form-title'>Анкета</motion.div>
             <div className='questions-container'>
                 <motion.div custom={1} variants={animationStyle} className='questions-container'>
-                    <div className='question-title requered'>Сможете ли присутствовать на нашем торжестве?</div>
+                    <div className='question-title requered'>Сможете ли Вы присутствовать на нашем торжестве?</div>
                     <div className='question-radio'>
                         <div className='radio-item' onChange={()=>setPresence(1)}>
                             <input type="radio" id="1" checked={presence == 1 ? true:false}/>

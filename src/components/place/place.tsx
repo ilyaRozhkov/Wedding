@@ -33,11 +33,11 @@ export const Place = () =>{
         whileInView={'timeOutPagesVisible'}   viewport={{ once: true }} className='place-container'>
             <motion.div custom={1} variants={animationStyle} className='place-title'>Место проведения</motion.div>
             <motion.div custom={2} variants={animationStyle} className='place-name'>Ресторан Арт-холл</motion.div>
-            <motion.div custom={3} variants={animationStyle} className='place-address'>г. Брянск, Московский проспект, 158</motion.div>
-            <motion.div custom={4} variants={animationStyle}>
+            <motion.div custom={2} variants={animationStyle} className='place-address'>г. Брянск, Московский проспект, 158</motion.div>
+            <motion.div custom={3} variants={animationStyle}>
             <img className="place-map" src={placemap} alt=''/>
             </motion.div>
-            <motion.button custom={4} variants={animationStyle} className="cta" onClick={()=>
+            <motion.button custom={3} variants={animationStyle} className="cta" onClick={()=>
 window.open('https://yandex.ru/maps/191/bryansk/?ll=34.466978%2C53.206881&mode=poi&poi%5Bpoint%5D=34.465858%2C53.207234&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1208546851&z=17', '_blank')}>
   <span className="hover-underline-animation"> Посмотреть на карте </span>
   <svg
