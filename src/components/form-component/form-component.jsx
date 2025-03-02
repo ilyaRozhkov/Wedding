@@ -3,6 +3,14 @@ import axios from 'axios';
 import './form-component.css'
 import {motion} from "framer-motion";
 
+const user = {
+    '0JzQuNGF0LDQu9GR0LLQsCDQkNC70LjQvdCw': 'Алина Михалёва',
+    '0JHRg9Cz0YDQvtCyINCQ0LvQtdC60YHQsNC90LTRgA==': 'Бугров Александр'
+}
+const userText = {
+        '0JzQuNGF0LDQu9GR0LLQsCDQkNC70LjQvdCw': 'Уважаемая',
+        '0JHRg9Cz0YDQvtCyINCQ0LvQtdC60YHQsNC90LTRgA==':'Уважаемый'
+}
 
 const animationStyle = {
     timeOutPagesHidden : {
@@ -33,6 +41,9 @@ export const FormComponent = () =>{
     const [drinks, setDrinks] = useState(['none']);
     const [allergy, setAllergy] = useState('');
     const [transfer, setTransfer] = useState(0);
+    let params = new URLSearchParams(document.location.search);
+    let par = params.get('key'); // 'key' – это имя целевого параметра
+
     const onChangeDrinks = (value)=>{
         if(value=='none'){
             setDrinks(['none'])
@@ -56,17 +67,18 @@ export const FormComponent = () =>{
         }
     },[drinks])
     const sendData = () =>{
-        if(!Boolean(name) || !Boolean(presence) || !Boolean(allergy) || !Boolean(transfer)){
+        if(!Boolean(presence) || !Boolean(transfer)){
+
             return
         }
         const body ={
-            name:name,
+            name:user[par],
             presence:presenceValue[presence],
             drinks:drinks.join(', '),
             allergy:allergy,
             transfer:transferValue[transfer],
         };
-
+        console.log('body',body)
         axios.post('https://api.sheetbest.com/sheets/92345ab0-cc4b-4d9c-b958-b10acc9a1661', body)
         .then(response => {
         })
@@ -77,12 +89,8 @@ export const FormComponent = () =>{
             <motion.div custom={1} variants={animationStyle} className='form-title'>Анкета</motion.div>
             <div className='questions-container'>
                 <motion.div custom={2} variants={animationStyle} className='questions-container-item'>
-                    <div className='question-title requered'>Напишите, пожалуйста, Вашу фамилию и имя</div>
-                    <div className='question-input'>
+                    <div className='question-title'>{userText[par]}, {user[par]} ответьте на вопросы анкеты</div>
 
-                            <input value={name} className="input" onChange={(e)=>setName(e.target.value)} />
-
-                    </div>
                 </motion.div>
                 <motion.div custom={3} variants={animationStyle} className='questions-container'>
                     <div className='question-title requered'>Сможете ли присутствовать на нашем торжестве?</div>
