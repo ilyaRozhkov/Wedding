@@ -3,6 +3,7 @@ import axios from 'axios';
 import './form-component.css'
 import {motion} from "framer-motion";
 import { ToastContainer, toast  } from "react-toastify";
+import {user, userText} from '../../common/user-name.ts'
 const Msg = ({ data }) => {
     return (
       <div className="msg-container">
@@ -14,14 +15,6 @@ const Msg = ({ data }) => {
 
 
 
-const user = {
-    '0JzQuNGF0LDQu9GR0LLQsCDQkNC70LjQvdCw': 'Алина Михалёва',
-    '0JHRg9Cz0YDQvtCyINCQ0LvQtdC60YHQsNC90LTRgA==': 'Бугров Александр'
-}
-const userText = {
-        '0JzQuNGF0LDQu9GR0LLQsCDQkNC70LjQvdCw': 'Уважаемая',
-        '0JHRg9Cz0YDQvtCyINCQ0LvQtdC60YHQsNC90LTRgA==':'Уважаемый'
-}
 
 const animationStyle = {
     timeOutPagesHidden : {
