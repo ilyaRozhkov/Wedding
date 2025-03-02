@@ -1,6 +1,20 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import './form-component.css'
+import {motion} from "framer-motion";
+
+
+const animationStyle = {
+    timeOutPagesHidden : {
+        y: 20,
+        opacity: 0
+    },
+    timeOutPagesVisible : custom => ({
+        y:0,
+        opacity: 1,
+        transition: {delay : custom *0.7},
+    })
+}
 
 const presenceValue = {
     1:'Смогу приехать на церемонию',
@@ -58,18 +72,19 @@ export const FormComponent = () =>{
         })
     }
     return (
-        <div className='form-containet'>
-            <div className='form-title'>Анкета</div>
+        <motion.div initial={'timeOutPagesHidden'}
+                whileInView={'timeOutPagesVisible'}   viewport={{ once: true }} className='form-containet'>
+            <motion.div custom={1} variants={animationStyle} className='form-title'>Анкета</motion.div>
             <div className='questions-container'>
-                <div className='questions-container-item'>
+                <motion.div custom={2} variants={animationStyle} className='questions-container-item'>
                     <div className='question-title requered'>Напишите, пожалуйста, Вашу фамилию и имя</div>
                     <div className='question-input'>
 
                             <input value={name} className="input" onChange={(e)=>setName(e.target.value)} />
 
                     </div>
-                </div>
-                <div className='questions-container'>
+                </motion.div>
+                <motion.div custom={3} variants={animationStyle} className='questions-container'>
                     <div className='question-title requered'>Сможете ли присутствовать на нашем торжестве?</div>
                     <div className='question-radio'>
                         <div className='radio-item' onChange={()=>setPresence(1)}>
@@ -89,8 +104,8 @@ export const FormComponent = () =>{
                             <label htmlFor="4" className='radio-text'>К сожалению, не смогу присутствовать</label>
                         </div>
                     </div>
-                </div>
-                <div className='questions-container'>
+                </motion.div>
+                <motion.div custom={4} variants={animationStyle} className='questions-container'>
                     <div className='question-title requered'>Нужен ли Вам трансфер?</div>
                     <div className='question-radio'>
                         <div className='radio-item' onChange={()=>setTransfer(7)}>
@@ -102,8 +117,8 @@ export const FormComponent = () =>{
                             <label htmlFor="8" className='radio-text'>Буду на своей машине</label>
                         </div>
                     </div>
-                </div>
-                <div className='questions-container'>
+                </motion.div>
+                <motion.div custom={5} variants={animationStyle} className='questions-container'>
                     <div className='question-title requered'>Что предпочитаете из напитков?</div>
                     <div className='question-cheackbox'>
                         <div className='cheackbox-item' onChange={()=>onChangeDrinks('redVine')}>
@@ -139,15 +154,15 @@ export const FormComponent = () =>{
                             <label htmlFor="none" className='radio-text'>Не пью алкоголь</label>
                         </div>
                     </div>
-                </div>
-                <div className='questions-container'>
+                </motion.div>
+                <motion.div custom={6} variants={animationStyle} className='questions-container'>
                     <div className='question-title'>Есть ли у вас аллергии, если есть то какие?</div>
                     <div className='question-input'>
                     <input value={allergy} className="input" onChange={(e)=>setAllergy(e.target.value)} />
                     </div>
-                </div>
+                </motion.div>
             </div>
-            <div className='btn-submit' onClick={()=>sendData()}>Отправить</div>
-        </div>
+            <motion.div custom={6} variants={animationStyle} className='btn-submit' onClick={()=>sendData()}>Отправить</motion.div>
+        </motion.div>
     )
 }

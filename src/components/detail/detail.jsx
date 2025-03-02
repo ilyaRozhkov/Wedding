@@ -22,7 +22,7 @@ export const Detail = () => {
 
     return (
         <motion.div initial={'timeOutPagesHidden'}
-        whileInView={'timeOutPagesVisible'} className='detail-container'>
+        whileInView={'timeOutPagesVisible'}   viewport={{ once: true }} className='detail-container'>
             <motion.div custom={1} variants={animationStyle} className='detail-title'>Детали</motion.div>
             <motion.div custom={2} variants={animationStyle} className='detail-item-container'>
                 <motion.div custom={3} variants={animationStyle} className='detail-item-item'>Главное для нас - ваше присутствие.

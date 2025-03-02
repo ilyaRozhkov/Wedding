@@ -30,7 +30,7 @@ export const Plane = () => {
     return (
         <motion.div
         initial={'timeOutPagesHidden'}
-        whileInView={'timeOutPagesVisible'}  className="plane-container">
+        whileInView={'timeOutPagesVisible'}    viewport={{ once: true }} className="plane-container">
             <motion.div custom={1} variants={animationStyle} className="plane-title">Программа</motion.div>
             <div className="plane-container-item">
                 <div className="plane-container-item-letf">
@@ -45,7 +45,7 @@ export const Plane = () => {
                 </div>
                 <motion.div
         initial={'timeOutPagesHiddenMiddle'}
-        whileInView={'timeOutPagesVisibleMiddle'} >
+        whileInView={'timeOutPagesVisibleMiddle'}   viewport={{ once: true }}>
                 <motion.div custom={1} variants={animationStyleMiddle} className="plane-container-item-line"></motion.div>
                 </motion.div>
                 <div

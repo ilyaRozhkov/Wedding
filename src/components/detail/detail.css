@@ -1,6 +1,6 @@
 .detail-container{
-    margin-top: 100px;
-    padding-top: 15px;
+    margin-top: 56px;
+
 }
 .detail-title{
     font-size: 40px;
@@ -12,12 +12,12 @@
     flex-direction: column;
     width: 350px;
     height: auto;
-    margin: 16px auto;
+    margin: 8px auto;
     flex-wrap: nowrap;
     align-items: center;
 }
 .detail-item-item{
-    margin-top: 16px;
+    margin-top: 4px;
     font-size: 24px;
 }
 .detail-item-split{

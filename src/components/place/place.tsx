@@ -1,6 +1,6 @@
 import './place.css'
 import React, {useEffect, useState} from 'react';
-import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
+import placemap from '../../img/place/place.png'
 
 
 import {motion} from "framer-motion";
@@ -30,12 +30,15 @@ export const Place = () =>{
     }
     return (
         <motion.div         initial={'timeOutPagesHidden'}
-        whileInView={'timeOutPagesVisible'} className='place-container'>
+        whileInView={'timeOutPagesVisible'}   viewport={{ once: true }} className='place-container'>
             <motion.div custom={1} variants={animationStyle} className='place-title'>Место проведения</motion.div>
             <motion.div custom={2} variants={animationStyle} className='place-name'>Ресторан Арт-холл</motion.div>
             <motion.div custom={3} variants={animationStyle} className='place-address'>г. Брянск, Московский проспект, 158</motion.div>
-
-            <motion.button custom={4} variants={animationStyle} className="cta" onClick={()=>onMap()}>
+            <motion.div custom={4} variants={animationStyle}>
+            <img className="place-map" src={placemap} alt=''/>
+            </motion.div>
+            <motion.button custom={4} variants={animationStyle} className="cta" onClick={()=>
+window.open('https://yandex.ru/maps/191/bryansk/?ll=34.466978%2C53.206881&mode=poi&poi%5Bpoint%5D=34.465858%2C53.207234&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1208546851&z=17', '_blank')}>
   <span className="hover-underline-animation"> Посмотреть на карте </span>
   <svg
     id="arrow-horizontal"
@@ -52,22 +55,6 @@ export const Place = () =>{
     ></path>
   </svg>
 </motion.button>
-{mapOpen && 
-<div className='place-map'>
-<YMaps>
-      <Map defaultState={{ center: [53.21, 34.4], zoom: 11, controls: ["zoomControl", "fullscreenControl"],
-    }} modules={["control.ZoomControl", "control.FullscreenControl"]}>
-        <Placemark geometry={[53.20728, 34.46549]} modules={["geoObject.addon.balloon"]}       properties={{
-        balloonContentBody:
-          "Ресторан",
-      }}/>
-              <Placemark geometry={[53.21379, 34.42291]} modules={["geoObject.addon.balloon"]}       properties={{
-        balloonContentBody:
-          "ЗАГС",
-      }}/>
-      </Map>
-    </YMaps>
-    </div>}
         </motion.div>
     )
 }
