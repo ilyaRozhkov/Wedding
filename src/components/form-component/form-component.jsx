@@ -119,11 +119,7 @@ export const FormComponent = () =>{
                 whileInView={'timeOutPagesVisible'}   viewport={{ once: true }} className='form-containet'>
             <motion.div custom={1} variants={animationStyle} className='form-title'>Анкета</motion.div>
             <div className='questions-container'>
-                <motion.div custom={2} variants={animationStyle} className='questions-container-item'>
-                    <div className='question-title'>{userText[par]}, {user[par]} ответьте на вопросы анкеты</div>
-
-                </motion.div>
-                <motion.div custom={3} variants={animationStyle} className='questions-container'>
+                <motion.div custom={1} variants={animationStyle} className='questions-container'>
                     <div className='question-title requered'>Сможете ли присутствовать на нашем торжестве?</div>
                     <div className='question-radio'>
                         <div className='radio-item' onChange={()=>setPresence(1)}>
@@ -144,7 +140,7 @@ export const FormComponent = () =>{
                         </div>
                     </div>
                 </motion.div>
-                <motion.div custom={4} variants={animationStyle} className='questions-container'>
+                <motion.div custom={1} variants={animationStyle} className='questions-container'>
                     <div className='question-title requered'>Нужен ли Вам трансфер?</div>
                     <div className='question-radio'>
                         <div className='radio-item' onChange={()=>setTransfer(7)}>
@@ -157,7 +153,7 @@ export const FormComponent = () =>{
                         </div>
                     </div>
                 </motion.div>
-                <motion.div custom={5} variants={animationStyle} className='questions-container'>
+                <motion.div custom={1} variants={animationStyle} className='questions-container'>
                     <div className='question-title requered'>Что предпочитаете из напитков?</div>
                     <div className='question-cheackbox'>
                         <div className='cheackbox-item' onChange={()=>onChangeDrinks('redVine')}>
@@ -194,14 +190,14 @@ export const FormComponent = () =>{
                         </div>
                     </div>
                 </motion.div>
-                <motion.div custom={6} variants={animationStyle} className='questions-container last-question'>
+                <motion.div custom={1} variants={animationStyle} className='questions-container last-question'>
                     <div className='question-title '>Есть ли у вас аллергии, если есть то какие?</div>
                     <div className='question-input'>
                     <input value={allergy} className="input" onChange={(e)=>setAllergy(e.target.value)} />
                     </div>
                 </motion.div>
             </div>
-            <motion.div custom={6} variants={animationStyle} className='btn-submit' onClick={()=>sendData()}>Отправить</motion.div>
+            <motion.div custom={1} variants={animationStyle} className='btn-submit' onClick={()=>sendData()}>Отправить</motion.div>
             <ToastContainer />
         </motion.div>
     )
