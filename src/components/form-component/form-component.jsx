@@ -155,8 +155,8 @@ export const FormComponent = () =>{
                         </div>
                     </div>
                 </motion.div>
-                <motion.div custom={6} variants={animationStyle} className='questions-container'>
-                    <div className='question-title'>Есть ли у вас аллергии, если есть то какие?</div>
+                <motion.div custom={6} variants={animationStyle} className='questions-container last-question'>
+                    <div className='question-title '>Есть ли у вас аллергии, если есть то какие?</div>
                     <div className='question-input'>
                     <input value={allergy} className="input" onChange={(e)=>setAllergy(e.target.value)} />
                     </div>

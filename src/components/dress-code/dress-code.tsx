@@ -24,10 +24,10 @@ export const DressCode = () =>{
             <motion.div custom={1} variants={animationStyle} className='dress-code-title'>Дресс-код</motion.div>
             <motion.div custom={2} variants={animationStyle} className='dress-code-text'>Мы очень ждем и с удовольствием готовимся к Нашему дню! Поддержите нас своими улыбками, а также красивыми нарядами в палитре торжества</motion.div>
             <motion.div custom={3} variants={animationStyle} className='dress-code-item-container'>
-                <div className='dress-code-color' style={{backgroundColor: '#e9e2da'}}></div>
-                <div className='dress-code-color' style={{backgroundColor: '#caaf8e'}}></div>
-                <div className='dress-code-color' style={{backgroundColor: '#73714b'}}></div>
-                <div className='dress-code-color' style={{backgroundColor: '#383c1b'}}></div>
+                <div className='dress-code-color color-first' style={{backgroundColor: '#e9e2da'}}></div>
+                <div className='dress-code-color color-second' style={{backgroundColor: '#caaf8e'}}></div>
+                <div className='dress-code-color color-third' style={{backgroundColor: '#73714b'}}></div>
+                <div className='dress-code-color color-fourth' style={{backgroundColor: '#383c1b'}}></div>
         
             </motion.div>
         </motion.div>

@@ -15,19 +15,29 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
-    max-width: 400px;
-    height: 100px;
+    justify-content: space-evenly;
+    max-width: 356px;
+    height: 110px;
     margin: 16px auto;
     border: 1px solid #898989;
-    border-radius: 50px;
+    border-radius: 100px;
     align-items: center;
 }
 .dress-code-color{
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 1px;
+}
+.color-first{
+    border: 1px solid rgba(207, 199, 191, 1);
+
+}
+.color-second{
+    border: 1px solid rgba(188, 165, 136, 1);
+}
+.color-third{
+    border: 1px solid rgba(106, 104, 64, 1);
+}
+.color-fourth{
+    border: 1px solid rgba(47, 50, 23, 1);
 }
