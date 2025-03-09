@@ -188,6 +188,7 @@ export const FormComponent = () =>{
                         <input type="checkbox" id="none" checked={drinks.includes('none')}/>
                             <label htmlFor="none" className='radio-text'>Не пью алкоголь</label>
                         </div>
+                        <div>(Возможен множественный выбор)</div>
                     </div>
                 </motion.div>
                 <motion.div custom={1} variants={animationStyle} className='questions-container last-question'>
@@ -197,7 +198,8 @@ export const FormComponent = () =>{
                     </div>
                 </motion.div>
             </div>
-            <motion.div custom={1} variants={animationStyle} className='btn-submit' onClick={()=>sendData()}>Отправить</motion.div>
+            <motion.div custom={1} whileTap={{ scale: 0.85 }} variants={animationStyle} className='btn-submit' onClick={()=>sendData()}>
+                Отправить</motion.div>
             <ToastContainer />
         </motion.div>
     )
