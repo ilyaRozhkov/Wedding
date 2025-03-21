@@ -188,7 +188,6 @@ export const FormComponent = () =>{
                         <input type="checkbox" id="none" checked={drinks.includes('none')}/>
                             <label htmlFor="none" className='radio-text'>Не пью алкоголь</label>
                         </div>
-                        <div>(Возможен множественный выбор)</div>
                     </div>
                 </motion.div>
                 <motion.div custom={1} variants={animationStyle} className='questions-container last-question'>

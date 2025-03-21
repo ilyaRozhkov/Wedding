@@ -1,0 +1,57 @@
+.dress-code-container{
+    margin-top: 100px;
+}
+.dress-code-title{
+    font-size: 40px;
+    height: 45px;
+}
+.dress-code-text{
+    font-family: 'ViaodaLibre-Regular', sans-serif;
+    font-size: 24px;
+    padding: 4px;
+    margin-top: 8px;
+}
+.dress-code-item-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    max-width: 356px;
+    height: 110px;
+    margin: 16px auto;
+    border: 1px solid #898989;
+    border-radius: 100px;
+    align-items: center;
+}
+.dress-code-color{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.color-first{
+    border: 1px solid rgba(207, 199, 191, 1);
+
+}
+.color-second{
+    border: 1px solid rgba(188, 165, 136, 1);
+}
+.color-third{
+    border: 1px solid rgba(106, 104, 64, 1);
+}
+.color-fourth{
+    border: 1px solid rgba(47, 50, 23, 1);
+}
+.dress-code-color-container{
+    height: 500px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+}
+.img-color-container{
+    width: 280px;
+    height: 450px;
+}
