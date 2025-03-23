@@ -12,7 +12,7 @@ export const user = {
     '0K7Qu9C40Y8g0JvQtdCy0YjQtdC90L7Qug==':'Юлия Левшенок',
     '0JDRhNC0L3QuNC90LAg0KDQtdC90LDRgtCw':'Рената Афонина',//+
     '0JDRhNC0L3QuNC90LAg0JDQu9C40L3QsA==':'Алина Афонина',//+
-    '0J/QvtC/0L7QsiDQkNC90LTRgNC10Lk=':'Андрей Попов',
+    '0J/QvtC/0L7QsiDQkNC90LTRgNC10Lk=':'Ксюха',
     '0J3QsNGC0LDQu9GM0Y8g0JLQsNGB0LjQu9GM0LXQstC90LA=':'Наталья Васильевна',//+
     '0K3QtNGD0LDRgNC0INCS0LjQutGC0L7RgNC0LLQuNGH':'Эдуард Викторович.',//+
     '0JXQu9C10L3QsCDQpNC10LTQvtGC0LrQuNC90LA=': 'Елена Федоткина',
@@ -22,7 +22,7 @@ export const user = {
     '0JXQstCz0LXQvdC40Lkg0JzQuNGF0LDQudC70L7QstC40Yc=':'Евгений Михайлович и Людмила Владимирована',//+
     '0JDQu9C10LrRgdCw0L3QtNGAINCc0LjRhdCw0LnQu9C0LLQuNGH':'Александр Михайлович и Раиса Петровна',//+
     '0JvRjtCx0L7QstGMINCd0LjQutC0LvQsNC10LLQvdCw':'Любовь Николаевна и Василий Васильевич',//+
-    '0JvRjtCx0L7QstGMINCQ0LvQtdC60YHQsNC90LTRgNC0LLQvdCw':'Любовь Александровна',//+
+    '0JvRjtCx0L7QstGMINCQ0LvQtdC60YHQsNC90LTRgNC0LLQvdCw':'Валя',//+
     '0KHQtdGA0LPQtdC5INCd0LjQutC0LvQsNC10LLQuNGH':'Сергей Николаевич',//+
     '0KLQsNGC0YzRj9C90LAg0JzQuNGF0LDQudC70L7QstC90LA=':'Татьяна Алексеевна и Валерий ...',//+
     '0JPQsNC70LjQvdCwINCQ0LvQtdC60YHQsNC90LTRgNC0LLQvdCw':'Галина Александровна',//+
