@@ -92,7 +92,6 @@ export const FormComponent = () =>{
             allergy:allergy,
             transfer:transferValue[transfer],
         };
-        console.log('body',body)
         axios.post('https://api.sheetbest.com/sheets/8de2c6e2-d409-4f64-8692-8d6a9a9f9baa', body)
         .then(response => {
             toast.success(Msg,
