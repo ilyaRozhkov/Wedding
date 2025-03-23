@@ -1,7 +1,7 @@
 import React from "react";
 import './first-level.css';
 
-import ebloUs from '../../img/firstlevelimg/IbloUs.jpg'
+import ebloUs from '../../img/firstlevelimg/IbloUs1.jpg'
 import flower from '../../img/firstlevelimg/flower.png'
 import sideFlower from '../../img/firstlevelimg/sideFlower.png'
 

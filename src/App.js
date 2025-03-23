@@ -4,10 +4,10 @@ import { Place } from './components/place/place.tsx';
 import { Plane } from './components/plan/plane.jsx';
 import './App.css';
 import { DressCode } from './components/dress-code/dress-code.tsx';
-import { DressCode1 } from './components/another-dress-code/dress-code1.tsx';
 import { Detail } from './components/detail/detail.jsx';
 import { FormComponent } from './components/form-component/form-component.jsx';
 import { Contact } from './components/contact/contact.jsx';
+
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <Place />
       <Plane />
       <DressCode />
-      <DressCode1 />
+
       <Detail />
       <FormComponent />
       <Contact />

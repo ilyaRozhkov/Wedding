@@ -11,22 +11,21 @@
     padding: 4px;
     margin-top: 8px;
 }
-.dress-code-item-container{
+.dress-code-item-container3{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    max-width: 356px;
-    height: 110px;
+    max-width: 400px;
+    height: 400px;
     margin: 16px auto;
-    border: 1px solid #898989;
-    border-radius: 100px;
+    border-radius: 50px;
     align-items: center;
 }
-.dress-code-color{
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+.dress-code-color3{
+    border-radius: 25px;
+    width: 180px;
+    height: 180px;
 }
 .color-first{
     border: 1px solid rgba(207, 199, 191, 1);
@@ -40,4 +39,11 @@
 }
 .color-fourth{
     border: 1px solid rgba(47, 50, 23, 1);
+}
+.img-color-container3{
+
+    width: 180px;
+    height: 180px;
+    border-radius: 25px;
+    background-size: auto
 }
