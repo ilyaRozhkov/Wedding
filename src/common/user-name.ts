@@ -14,9 +14,11 @@ export const user = {
     '0JDRhNC+0L3QuNC90LAg0JDQu9C40L3QsA==':'Алина Афонина',//+
     '0J/QvtC/0L7QsiDQkNC90LTRgNC10Lk=':'Андрей Попов',
     '0J3QsNGC0LDQu9GM0Y8g0JLQsNGB0LjQu9GM0LXQstC90LA=':'Наталья Васильевна',//+
-    '0K3QtNGD0LDRgNC0INCS0LjQutGC0L7RgNC+0LLQuNGH':'Эдуард Викторович и Елена ...',//+
+    '0K3QtNGD0LDRgNC0INCS0LjQutGC0L7RgNC+0LLQuNGH':'Эдуард Викторович.',//+
+    '0JXQu9C10L3QsCDQpNC10LTQvtGC0LrQuNC90LA=': 'Елена Федоткина',
     '0JXQutCw0YLQtdGA0LjQvdCwINCV0LLQs9C10L3RjNC10LLQvdCw':'Екатерина Евгеньевна',//+
-    '0JLQu9Cw0LTQuNC80LjRgCDQkNC70LXQutGB0LDQvdC00YDQvtCy0LjRhw==':'Владимир Александрович и Маргарита Евгеньевна',//+
+    '0JLQu9Cw0LTQuNC80LjRgCDQkNC70LXQutGB0LDQvdC00YDQvtCy0LjRhw==':'Владимир Александрович',//+
+    '0JzQsNGA0LPQsNGA0LjRgtCwINCV0LLQs9C10L3RjNC10LLQvdCw':'Маргарита Евгеньевна',
     '0JXQstCz0LXQvdC40Lkg0JzQuNGF0LDQudC70L7QstC40Yc=':'Евгений Михайлович и Людмила Владимирована',//+
     '0JDQu9C10LrRgdCw0L3QtNGAINCc0LjRhdCw0LnQu9C+0LLQuNGH':'Александр Михайлович и Раиса Петровна',//+
     '0JvRjtCx0L7QstGMINCd0LjQutC+0LvQsNC10LLQvdCw':'Любовь Николаевна и Василий Васильевич',//+
@@ -24,7 +26,9 @@ export const user = {
     '0KHQtdGA0LPQtdC5INCd0LjQutC+0LvQsNC10LLQuNGH':'Сергей Николаевич',//+
     '0KLQsNGC0YzRj9C90LAg0JzQuNGF0LDQudC70L7QstC90LA=':'Татьяна Алексеевна и Валерий ...',//+
     '0JPQsNC70LjQvdCwINCQ0LvQtdC60YHQsNC90LTRgNC+0LLQvdCw':'Галина Александровна',//+
-    '0JXQs9C+0YAg0KHQtdGA0LPQtdC10LLQuNGH':'Егор Сергеевич'//+
+    '0JXQs9C+0YAg0KHQtdGA0LPQtdC10LLQuNGH':'Егор Сергеевич',//+
+    '0JLQu9Cw0LTQuNGB0LvQsNCyINCl0YDQsNC80YfQtdC90LrQvg==':'Владислав Храмченко',
+    '0KHQstC10YLQu9Cw0L3QsCAo0LrRgNC10YHRgtC90LDRjyk=': 'Светлана (крестная)'
     
 }
 

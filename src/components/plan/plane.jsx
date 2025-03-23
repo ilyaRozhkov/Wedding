@@ -55,7 +55,7 @@ export const Plane = () => {
                     <div> Фотосессия</div>
                 </motion.div>
                 <motion.div custom={5} variants={animationStyle} className="plane-item" style={{marginTop: '55px'}}>
-                    <div>22:00</div>
+                    <div>23:00</div>
                     <div> Зевершение торжества</div>
                 </motion.div>     
                 </div>
