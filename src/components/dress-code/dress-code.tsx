@@ -26,7 +26,7 @@ export const DressCode = () =>{
         <motion.div initial={'timeOutPagesHidden'}
         whileInView={'timeOutPagesVisible'}   viewport={{ once: true }} className='dress-code-container'>
             <motion.div custom={1} variants={animationStyle} className='dress-code-title'>Дресс-код</motion.div>
-            <motion.div custom={1} variants={animationStyle} className='dress-code-text'>Мы очень ждем и с удовольствием готовимся к Нашему дню! Поддержите нас своими улыбками, а также красивыми нарядами в данной цветовой палитре</motion.div>
+            <motion.div custom={1} variants={animationStyle} className='dress-code-text'>Мы очень ждем и с удовольствием готовимся к Нашему дню! Поддержите нас своими улыбками, а также красивыми нарядами в данной цветовой палитре.</motion.div>
             <motion.div custom={2} variants={animationStyle} className='dress-code-item-container3'>
                 <div className='dress-code-color3 ' >
                 <img className='img-color-container3' src={item1} alt=''/>

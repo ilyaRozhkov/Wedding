@@ -113,6 +113,7 @@ export const FormComponent = () =>{
               );
         })
     }
+    console.log('user[par]',user[par])
     return (
         <motion.div initial={'timeOutPagesHidden'}
                 whileInView={'timeOutPagesVisible'}   viewport={{ once: true }} className='form-containet'>
